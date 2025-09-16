@@ -141,3 +141,147 @@ li:hover {
   border-left: 6px solid #e63946; /* Red */
   font-weight: bold;
 }
+
+/* Background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #000000, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.todo-container {
+  width: 420px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.todo-container h1 {
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: 1.8rem;
+}
+
+/* Input + Button */
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#task, #priority {
+  padding: 0.6rem;
+  border: 2px solid #313131;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+#task {
+  flex: 1;
+}
+
+#task:focus, #priority:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+#addBtn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  background: #0056b3;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  background: lightgray;
+}
+
+.task-text {
+  flex: 1;
+  margin: 0 0.5rem;
+  text-align: left;
+}
+
+.Completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Buttons */
+.edit-btn, .delete-btn {
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background-color: #ffd966;
+  color: #333333;
+}
+
+.edit-btn:hover {
+  background-color: #ffca3a;
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e63946;
+}
+
+/* Priority Styles */
+.low {
+  border-left: 6px solid #6c757d; /* Gray */
+}
+.medium {
+  border-left: 6px solid #f4a261; /* Orange */
+}
+.high {
+  border-left: 6px solid #e63946; /* Red */
+  font-weight: bold;
+}
